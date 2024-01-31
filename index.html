@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HTML + CSS</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="card">
+      <div class="card-front card-part" id="card-front">
+        <img
+          alt=""
+          class="card-front-square card-square"
+          src="https://65389a32af3f2844bef75179--idyllic-otter-8174f7.netlify.app/assets/icons/sim-card-chip.png"
+        />
+        <img
+          alt=""
+          class="card-front-square card-square"
+          src="https://65389a32af3f2844bef75179--idyllic-otter-8174f7.netlify.app/assets/icons/contactless-payment-white.png"
+        />
+        <img
+          alt=""
+          class="card-front-logo card-logo"
+          src="https://65389a32af3f2844bef75179--idyllic-otter-8174f7.netlify.app/assets/logos/22.svg"
+        />
+        <p class="card-number" id="card-number">**** **** **** ****</p>
+        <div class="card-space-75">
+          <span class="card-label">Card holder</span>
+          <p class="card-info" id="card-holder">Your name here</p>
+        </div>
+        <div class="card-space-25">
+          <span class="card-label">Expires</span>
+          <p class="card-info" id="card-expires-date">**/**</p>
+        </div>
+      </div>
+
+      <div class="card-back card-part" id="card-back">
+        <div class="card-black-line"></div>
+        <div class="card-back-content">
+          <div class="card-secret">
+            <p class="card-secret--last" id="card-secret-cvc">***</p>
+          </div>
+          <img
+            alt=""
+            class="card-back-logo card-logo"
+            src="https://65389a32af3f2844bef75179--idyllic-otter-8174f7.netlify.app/assets/logos/22.svg"
+          />
+        </div>
+      </div>
+    </div>
+    <div>
+      <form>
+        <div class="row">
+          <label>Card holder :</label>
+          <input
+            id="card-holder-input"
+            placeholder="Card holder name"
+            type="text"
+          />
+        </div>
+        <div class="row">
+          <label>Card number :</label>
+          <input
+            id="card-number-input"
+            maxlength="19"
+            minlength="19"
+            placeholder="Card number"
+            type="text"
+          />
+        </div>
+        <div class="row">
+          <div class="col-50">
+            <label>Expires :</label>
+            <input
+              id="card-expires-date-input"
+              max="1299"
+              maxlength="5"
+              minlength="5"
+              placeholder="Expires"
+              type="text"
+            />
+          </div>
+          <div class="col-50">
+            <label>CVC :</label>
+            <input
+              id="card-secret-cvc-input"
+              max="999"
+              maxlength="4"
+              min="100"
+              minlength="4"
+              placeholder="CVC"
+              type="text"
+            />
+          </div>
+        </div>
+      </form>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
